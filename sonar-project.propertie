@@ -1,6 +1,6 @@
 # Identifiants à remplacer
-sonar.projectKey=elhabchiali
-sonar.organization=elhabchiali_devops_2026_tp5_sonarqube_ci
+sonar.projectKey=elhabchiali_devops_2026_tp5_sonarqube_ci
+sonar.organization=elhabchiali
 
 sonar.projectName=SonarQube CI TP
 sonar.sources=src
