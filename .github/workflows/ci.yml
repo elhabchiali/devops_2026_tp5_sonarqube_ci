@@ -44,12 +44,6 @@ jobs:
             --cov-report=term-missing \
             --cov-report=xml:coverage.xml
 
-      # 5. Analyse SonarQube
-      # - name: SonarQube Scan
-      #   uses: SonarSource/sonarqube-scan-action@v8.5.0
-      #   env:
-      #     SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-
       - name: Cache SonarQube packages
         uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4.3.0
         with:
@@ -60,7 +54,4 @@ jobs:
         uses: SonarSource/sonarqube-scan-action@59202af334b4ba7b5db01b701b8e79f8b3bef0f4 # v8.5.0
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        with:
-          args: >
-            -Dsonar.organization=elhabchiali
-            -Dsonar.projectKey=elhabchiali_devops_2026_tp5_sonarqube_ci
+        
